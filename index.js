@@ -18,15 +18,17 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (cart.length = 0){
+  const n = cart.length
+  if (n = 0){
     console.log( "Your shopping cart is empty.")
  }
-    let cartItem = []
-    let itemPrice = []
+  
     let cartStatement = []
-    for(let i=1; i < cart.length; i++){
-      cartCheck[i] =` ${cart[i]} at $${cart[Object.keys(cart)[i]]},`
-      cartStatement.push(`${cartCheck[i]}`)
+    for(let i=1; i < n; i++){
+      let cartHolder =cart[i]
+      let cartItem = Object.keys(cartHolder)[0]
+      let price = cartHolder[item];
+      cartStatement.push(`${cartItem} at \$${price}`)
     }
     switch(cart.length){
       case 1:
@@ -44,8 +46,9 @@ function viewCart() {
 
 function total() {
   var cartValue = 0
-  for(let i=0; i < cart.length; i++){
-    cartValue +=`${cart[Object.keys(cart)[i]]},`
+  for(let i=0, n = cart.length; i < n; i++){
+    for{let item incart[i]}
+    cartValue += cart[i][item]
   }
   return cartvalue
 }
