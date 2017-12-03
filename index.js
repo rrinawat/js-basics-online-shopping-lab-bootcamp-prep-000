@@ -47,11 +47,11 @@ function viewCart() {
 function total() {
   var cartValue = 0
   for(let i=0, n = cart.length; i < n; i++){
-    for(let item incart[i]){
+    for(let item in cart[i]){
     cartValue += cart[i][item]
     }
   }
-  return cartvalue
+  return cartValue
 }
 
 function removeFromCart(item) {
