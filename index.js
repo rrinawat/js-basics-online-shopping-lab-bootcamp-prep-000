@@ -22,7 +22,7 @@ function viewCart() {
   if (n = 0){
     console.log( "Your shopping cart is empty.")
  }
-  
+
     let cartStatement = []
     for(let i=1; i < n; i++){
       let cartHolder =cart[i]
